@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/main_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/count_text_view"
+        style="@style/SimpleTextViewSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="120dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/share_button"
+        style="@style/DefaultImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:contentDescription="@string/button_share"
+        android:src="@drawable/ic_share"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/menu_button"
+        style="@style/DefaultImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:contentDescription="@string/button_menu"
+        android:src="@drawable/ic_list"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/share_button"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_favorites"
+        android:layout_width="409dp"
+        android:layout_height="609dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <include
+        android:id="@+id/favorites_absense"
+        layout="@layout/favourites_absense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler_view_favorites"
+        app:layout_constraintVertical_bias="0.43"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

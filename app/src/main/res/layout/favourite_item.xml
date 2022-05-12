@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_gray">
+
+    <ImageView
+        android:id="@+id/image_product"
+        android:layout_width="122dp"
+        android:layout_height="132dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/tolstovka" />
+
+    <TextView
+        style="@style/SimpleTextViewFirst.Black"
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@color/white"
+        android:text="@string/test_status"
+        app:layout_constraintStart_toEndOf="@+id/image_product"
+        app:layout_constraintTop_toTopOf="@+id/image_product" />
+
+    <TextView
+        android:id="@+id/text_cost"
+        style="@style/SimpleTextViewFirst.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:text="@string/test_cost"
+        app:layout_constraintStart_toStartOf="@+id/text_status"
+        app:layout_constraintTop_toBottomOf="@+id/text_status"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        style="@style/SimpleTextViewFirst.White"
+        android:id="@+id/text_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+        android:text="@string/test_discount"
+        app:layout_constraintStart_toStartOf="@+id/text_status"
+        app:layout_constraintTop_toBottomOf="@+id/text_cost" />
+
+    <ImageButton
+        android:id="@+id/button_menu"
+        style="@style/DefaultImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@color/light_gray"
+        android:contentDescription="@string/button_menu"
+        app:layout_constraintBottom_toBottomOf="@+id/image_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_product"
+        app:srcCompat="@drawable/ic_kebab" />
+
+    <TextView
+        android:id="@+id/text_title"
+        style="@style/TitleTextViewSecond.Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/light_gray"
+        android:text="@string/test_title"
+        app:layout_constraintEnd_toStartOf="@+id/button_menu"
+        app:layout_constraintStart_toStartOf="@+id/text_status"
+        app:layout_constraintTop_toBottomOf="@+id/text_discount" />
+
+    <TextView
+        style="@style/SimpleTextViewFirst.Black"
+        android:id="@+id/text_last_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/test_last_cost"
+        app:layout_constraintBottom_toBottomOf="@+id/text_discount"
+        app:layout_constraintStart_toEndOf="@+id/text_discount"
+        app:layout_constraintTop_toTopOf="@+id/text_discount" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#38A1A1DC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

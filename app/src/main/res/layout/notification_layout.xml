@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingStart="36dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="18dp">
+
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/TitleTextViewFirst.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_title" />
+
+    <TextView
+        android:id="@+id/description_text"
+        style="@style/SimpleTextViewFirst.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/help_button"
+        style="@style/BorderButton.White"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/white_border"
+        android:text="@string/button_help"
+        tools:ignore="TouchTargetSizeCheck"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/questions_button"
+        style="@style/BorderButton.White"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/white_border"
+        android:text="@string/button_questions"
+        tools:ignore="TouchTargetSizeCheck"/>
+</LinearLayout>

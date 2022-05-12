@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basket_empty"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingVertical="16dp">
+
+    <TextView
+        android:id="@+id/text_basket_empty_title"
+        style="@style/TitleTextViewFirst.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basket_empty_title"
+        app:layout_constraintBottom_toTopOf="@+id/text_basket_empty_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_basket_empty_description"
+        style="@style/SimpleTextViewFirst.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basket_empty_description"
+        app:layout_constraintBottom_toTopOf="@+id/button_to_trend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_to_trend"
+        style="@style/BorderButton.White"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/button_to_trends"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="end"
+        app:iconSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_to_favorites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_to_favorites"
+        style="@style/BorderButton.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/black_border"
+        android:text="@string/button_to_favorites"
+        app:cornerRadius="0dp"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="end"
+        app:iconSize="16dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

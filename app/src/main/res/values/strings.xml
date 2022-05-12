@@ -3,4 +3,42 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    //Menu strings
+    <string name="menu_catalog">Catalog</string>
+    <string name="menu_drops">Drops</string>
+    <string name="menu_radar">Radar</string>
+    <string name="menu_favourites">Favourites</string>
+    <string name="menu_basket">Basket</string>
+
+    <string name="button_search">Search</string>
+    <string name="button_profile">Profile</string>
+    <string name="button_help">HELP</string>
+    <string name="button_questions">FREQUENTLY ASKED QUESTIONS</string>
+    <string name="button_share">Share</string>
+    <string name="button_menu">Menu</string>
+    <string name="button_recently_viewed_products">НЕДАВНО ПРОСМОТРЕННЫЕ ТОВАРЫ</string>
+    <string name="button_make_purchases">НАЧАТЬ ДЕЛАТЬ ПОКУПКИ</string>
+    <string name="button_to_favorites">Favorites</string>
+    <string name="button_to_trends">ПОДБОРКА ТРЕНДОВ</string>
+
+
+
+    <string name="search_tint_text">Search product…</string>
+    <string name="notification_title">МЫ ВРЕМЕННО ПРИОСТАНАВЛИВАЕМ РАБОТУ ПРИЛОЖЕНИЯ И САЙТА</string>
+    <string name="notification_text">Мы приостанавливаем работу розничных магазинов, сайта и приложения до дальнейшего уведомления.\n\nВы сможете просматривать товар на сайте и в приложении, но возможность оформления заказов в данный момент не доступна.\n\nС условием возврата и обмена вы можете ознакомиться в разделе помощь или обратиться в клиентский сервис addidas.</string>
+    <string name="favorites_absence_title">СПИСОК ИЗБРАННЫХ МОДЕЛЕЙ ПУСТ</string>
+    <string name="favorites_absence_description">Нажми на сердечко что бы сохранить понравившиеся модели.</string>
+    <string name="basket_empty_title">В КОРЗИНЕ НЕТ ТОВАРОВ</string>
+    <string name="basket_empty_description">Добавь в корзину ранее понравившиеся модели.</string>
+
+    <string name="woman_categories_tab">Woman</string>
+    <string name="man_categories_tab">Man</string>
+    <string name="children_categories_tab">Children</string>
+
+    <string name="test_cost">5 699,00 Р</string>
+    <string name="test_status"><i>РАСПРОДАНО</i></string>
+    <string name="test_last_cost">6 999,00 Р</string>
+    <string name="test_discount">-20%</string>
+    <string name="test_title">ТОЛСТОВКА MUST HAVES STADIUM</string>
+
 </resources>

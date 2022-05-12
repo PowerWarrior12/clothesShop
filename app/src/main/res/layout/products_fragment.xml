@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/horizontal_borders">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/DefaultImageButton"
+            android:background="@color/white"
+            android:contentDescription="@string/menu_basket"
+            android:src="@drawable/ic_next" />
+
+        <TextView
+            android:id="@+id/category_text"
+            style="@style/TitleTextViewFirst.Black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/test_status" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            style="@style/DefaultImageButton"
+            android:layout_width="48dp"
+            android:background="@color/white"
+            android:contentDescription="@string/button_search"
+            android:src="@drawable/ic_search_2" />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            tools:ignore="RtlSymmetry">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:background="@drawable/horizontal_borders"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <ImageButton
+                    android:id="@+id/menu_button"
+                    style="@style/DefaultImageButton"
+                    android:background="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/menu_basket"
+                    android:src="@drawable/ic_list"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:scrollIndicators="none">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/categories_chips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:singleLine="true">
+
+                        <com.example.adidas.utils.views.CustomChip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_search"/>
+
+                        <com.example.adidas.utils.views.CustomChip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_search"/>
+
+                        <com.example.adidas.utils.views.CustomChip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_search"/>
+
+                        <com.example.adidas.utils.views.CustomChip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_search"/>
+
+                        <com.example.adidas.utils.views.CustomChip
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/button_search"/>
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/products_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>
